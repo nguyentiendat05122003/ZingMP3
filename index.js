@@ -52,6 +52,7 @@ const THEMES = JSON.parse(localStorage.getItem("THEMES")) || []; // các theme c
 const VALUE_THEME = JSON.parse(localStorage.getItem("LOAD_FIRST_THEME")) || [
   0, 0,
 ]; // giá trị lưu bc
+//
 const LIST_INFO_SONG = JSON.parse(localStorage.getItem("listSongs")) || [];
 const PLAY_LISTS = JSON.parse(localStorage.getItem("PLAY_LISTS")) || [];
 const LIST_ALBUM = JSON.parse(localStorage.getItem("LIST_ALBUM")) || [];
