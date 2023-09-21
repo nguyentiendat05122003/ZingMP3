@@ -59,7 +59,6 @@ const LIST_ALBUM = JSON.parse(localStorage.getItem("LIST_ALBUM")) || [];
 const LIST_MVS = JSON.parse(localStorage.getItem("LIST_MVS")) || [];
 const LIST_SINGER = JSON.parse(localStorage.getItem("LIST_SINGER")) || [];
 const tmp = `url(./assets/img/BCplaymusic/theme1.png)`;
-
 const app = {
   currentIndex: 0,
   renderModalSongs: function () {
@@ -698,6 +697,3 @@ const app = {
 };
 
 app.start();
-
-// kích hoạt sự kiện bằng cách element.event ko có on
-// toggle có 2 đôi số (class,điều kiện)

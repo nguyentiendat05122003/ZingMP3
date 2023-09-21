@@ -414,7 +414,7 @@ input[type=range]:active::-webkit-slider-thumb {
 }
 .header .container .search .history-search .history-separate {
   width: 100%;
-  border-top: 1px solid hsla(0deg, 0%, 100%, 0.1);
+  border-top: 1px solid hsla(0, 0%, 100%, 0.1);
   margin-top: 10px;
   padding-top: 10px;
 }
@@ -1555,6 +1555,11 @@ input[type=range]:active::-webkit-slider-thumb {
   }
   .singer-wrapper {
     display: none !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sideBar .menu-under {
+    max-height: auto;
   }
 }
 .play-music {
