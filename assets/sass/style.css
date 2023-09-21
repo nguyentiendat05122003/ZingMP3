@@ -1559,7 +1559,7 @@ input[type=range]:active::-webkit-slider-thumb {
 }
 @media screen and (min-width: 1024px) {
   .sideBar .menu-under {
-    max-height: auto;
+    max-height: 100%;
   }
 }
 .play-music {
