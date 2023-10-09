@@ -498,3 +498,167 @@
 .changeBackground.active{
     display: flex;
 }
+
+//MODAL LOGIN
+body.isNonScroll {
+    overflow: hidden;
+}
+.modal-login{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(3px);
+    z-index: 10;
+    display: flex;
+    transition: all 0.25 ease-in;
+    .modal-wrapper{
+        animation: scrollFadeIn ease-in 0.25s;
+        margin: auto;
+        background-color: #fff;
+        width: 463px;
+        height: 512px;
+        padding: 70px 60px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        z-index: 99;
+        position: relative;
+    }
+    .modal-login-header{
+        font-size: 3.4rem;
+        letter-spacing: 0.34px;
+        line-height: 3.6rem;
+        text-align: center;
+    }
+    .modal-login-text{
+        font-size: 1.6rem;
+        font-family: var(--sub-family);
+        font-weight: 400;
+        text-align: center;
+        margin: 16px 0;
+    }
+    .material-form{
+        width: 100%;
+    }
+    .form-group {
+        width: 100%;
+        position: relative;
+        margin-top: 25px;
+        margin-bottom: 20px;
+        label {
+          font-weight: 400;
+          color: var(--black-color);
+          position: absolute;
+          font-size: 1.4rem;
+          font-family: var(--sub-family);
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          transition: all .2s ease-in-out;
+        }
+        input[type="text"].form-control,
+        input[type="password"].form-control,
+        input[type="email"].form-control {
+          width: 100%;
+          height: 48px;
+          background: none;
+          border-radius: 0;
+          box-shadow: none;
+          font-weight: 300;
+          color: #263340;
+          padding-left: 0;
+          padding-right: 0;
+          border: none;
+          border-bottom: 1px solid #ddd;
+          transition: all .1s ease-in-out;
+          position: relative;
+          z-index: 2;
+          &:focus,
+          &:active {
+            outline: none;
+            box-shadow: none;
+            border: none;
+          }
+          &:active + label,
+          &:focus + label,
+          &.active + label {
+            color: var(--black-color);
+            font-size: 11px;
+            top: -10px;
+            transform: none;
+          }
+          &:active ~ .input-border,
+          &:focus ~ .input-border,
+          &.active ~ .input-border {
+            width: 100%;
+          }
+        }
+        .input-border {
+          display: block;
+          width: 0%;
+          height: 1px;
+          background: var(--primary-bg);
+          transition: all .2s ease-in-out;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          z-index: 3;
+          margin: 0 auto;
+        }
+      }
+      .modal-login-close{
+        position: absolute;
+        top: 10%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        width: 36px;
+        height: 36px;
+        border: 2px solid rgb(38, 38, 38);
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .modal-login-close i{
+        font-size: 1.8rem;
+    }
+      .btn {
+        font-size: 1.5rem;
+        color:var(--white-color) ;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding: 14px 40px;
+        cursor: pointer;
+        min-width: 170px;
+        border: none;
+        border-radius: 30px;
+        background:  var(--primary-bg);
+        transition: all .2s ease-in-out;
+        margin-top: 30px;
+        &:hover,
+        &:focus,
+        &:active {
+          background: var(--primary-bg);
+          border: none;
+          outline: none;
+        }
+      }
+      .helper-text {
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 20px;
+        color: var(--black-color);
+      }
+    .modal-login.isHidden{
+        display: none;
+    }
+    .modal-login.iShow{
+        display: flex;
+    }
+}
+.isHidden{
+    display: none;
+}

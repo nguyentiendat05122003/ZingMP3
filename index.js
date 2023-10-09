@@ -371,7 +371,6 @@ const app = {
     // scroll list
     function handleScroll(next, prev, element) {
       const scroll = element.scrollWidth - element.clientWidth;
-      // console.log(element.scrollWidth);
       next.onclick = (e) => {
         element.scrollLeft += scroll;
         if (

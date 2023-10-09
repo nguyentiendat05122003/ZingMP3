@@ -344,7 +344,7 @@
                   </ul>
                 </div>
               </button>
-              <div class="Account-Image">
+              <div class="Account-Image sub_header_item-login">
                 <img src="./assets/img/avatar/avatar.jpg" alt="" />
               </div>
             </div>
@@ -977,9 +977,33 @@
       </div>
     </div>
     <audio src=""></audio>
+    <div class="modal-login isHidden">
+      <div class="modal-wrapper">
+          <h2 class="modal-login-header">Welcome Back</h2>
+          <p class="modal-login-text">Sign in to access your bookmarked content and saved trips.</p>
+          <form class="material-form">
+            <div class="form-group">
+              <input type="email" class="form-control">
+              <label>Email</label>
+              <span class="input-border"></span>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control">
+              <label>Password</label>
+              <span class="input-border"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            <p class="helper-text">Don't have an account? <a href="#">Sign up</a> here.</p>
+          </form>
+          <button class="modal-login-close">
+              <i class="fa-solid fa-xmark"></i>
+          </button>
+      </div>
   </div>
+  </div>>
   </body>
   <script src="./index.js"></script>
+  <script src="./authentication.js"></script>
   <script src="./data/StorageBCTemplate.js"></script>
   <script src="./data/StorageTheme.js"></script>
   <script src="./data/InfoSong.js"></script>
